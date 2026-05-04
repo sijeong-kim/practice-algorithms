@@ -1,0 +1,12 @@
+def solution(triangle):
+    # 숫자
+    
+    for i in range(1, len(triangle)):
+        triangle[i][0] += triangle[i-1][0] 
+        triangle[i][i] += triangle[i-1][-1]
+        for j in range(1, i):
+            triangle[i][j] = max(triangle[i-1][j-1], triangle[i-1][j]) + triangle[i][j]
+            
+    return max(triangle[-1])
+
+# 다시 풀기
