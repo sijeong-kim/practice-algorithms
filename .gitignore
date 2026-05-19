@@ -37,3 +37,5 @@ settings.json
 
 # mac
 .DS_Store
+
+.venv
