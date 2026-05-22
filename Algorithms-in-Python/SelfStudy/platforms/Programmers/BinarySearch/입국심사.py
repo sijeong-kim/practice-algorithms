@@ -15,8 +15,6 @@ def solution(n, times):
         else:
             return True
 
-    
-    
     left = 0
     right = max(times) * n
     
