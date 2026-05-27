@@ -38,4 +38,6 @@ settings.json
 # mac
 .DS_Store
 
-.venv
+.venv/
+
+.idea/
